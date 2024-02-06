@@ -1,0 +1,48 @@
+@import '@/styles/_fonts.scss';
+
+.info {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.title {
+  color: var(--Main-White);
+  @extend %medium_L;
+}
+
+.container {
+  display: flex;
+  width: 336px;
+  height: 368px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 20px;
+  background: var(--Main-White);
+}
+
+.asset_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+}
+
+.notice_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}

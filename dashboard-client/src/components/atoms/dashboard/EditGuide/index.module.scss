@@ -1,0 +1,21 @@
+@import '@/styles/_fonts.scss';
+
+.edit_container {
+  display: flex;
+  width: 336px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edit_guide {
+  display: flex;
+  height: 16px;
+  padding: 1px 0px;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.message {
+  color: var(--Black-Black---08);
+  @extend %regular_S;
+}

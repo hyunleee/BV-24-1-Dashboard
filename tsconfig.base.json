@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "noImplicitAny": false,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/client/*": ["dashboard-client/*"],
+      "@/server/*": ["dashboard-server/*"],
+      "@/graphql/*": ["libs/graphql/*"],
+      "@/prisma/*": ["libs/prisma/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

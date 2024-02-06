@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+.navbar {
+  display: flex;
+  padding: 12px 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.tabs {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.divider_container {
+  padding-inline: 50px;
+  height: 0.5px;
+  align-self: stretch;
+}
+
+.divider {
+  height: 0.5px;
+  background: var(--Black-Black---03);
+}

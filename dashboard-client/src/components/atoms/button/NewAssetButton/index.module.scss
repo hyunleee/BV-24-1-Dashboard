@@ -1,0 +1,21 @@
+@import '@/styles/_fonts.scss';
+
+.new_asset_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.message {
+  color: var(--Black-Black---14);
+  @extend %medium_S;
+}
+
+.line {
+  width: 103px;
+  height: 0.5px;
+  background: var(--Black-Black---14);
+}

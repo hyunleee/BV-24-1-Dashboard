@@ -1,0 +1,43 @@
+@import '@/styles/_fonts.scss';
+
+.tab {
+  display: inline-flex;
+  padding: 8px 18.5px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 20px;
+  transition: all 0.5s ease 0s;
+
+  &:hover {
+    background: var(--Transparent-White);
+    .tab_name {
+      color: var(--Black-Black---05);
+    }
+  }
+}
+
+.tab_image {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease 0s;
+
+  &.fadeOut {
+    opacity: 0;
+  }
+}
+
+.tab_name {
+  color: var(--Main-White);
+  @extend %medium_M;
+  transition: all 0.5s ease 0s;
+}

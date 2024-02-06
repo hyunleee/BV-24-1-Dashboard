@@ -1,0 +1,30 @@
+@import '@/styles/_fonts.scss';
+
+.text_field {
+  display: flex;
+  height: 37px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+
+  input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--Blue-Main-Blue---07);
+    background: #fff;
+
+    color: var(--Black-Black---14);
+    @extend %regular_M;
+
+    &::placeholder {
+      color: var(--Black-Black---05);
+    }
+  }
+
+  &.error {
+    input {
+      border: 1px solid var(--Error, #f36960);
+    }
+  }
+}

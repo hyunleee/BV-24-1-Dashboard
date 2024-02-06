@@ -1,0 +1,130 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: Pretendard;
+  font-style: normal;
+  line-height: normal;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+html,
+body,
+input,
+textarea,
+select,
+button {
+  border: 0;
+  appearance: none;
+  box-sizing: border-box;
+  display: block;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+  font-family: Pretendard;
+}
+
+a,
+input,
+textarea,
+select,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  border: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

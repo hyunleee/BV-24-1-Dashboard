@@ -1,0 +1,31 @@
+@import '@/styles/_fonts.scss';
+
+.button_s {
+  display: inline-flex;
+  padding-inline: 14px;
+  justify-content: center;
+  align-items: center;
+  height: 29px;
+  gap: 10px;
+  border-radius: 14.5px;
+  border: 0.5px solid var(--Blue-Main-Blue---07);
+  background: var(--Main-White);
+  color: var(--Black-Black---14);
+  @extend %medium_M;
+
+  &:hover {
+    transition: all 0.5s ease 0s;
+    background: var(--Black-Black---01);
+  }
+
+  &.assert {
+    background: var(--Blue-Main-Blue---07);
+    color: var(--Main-White);
+  }
+
+  &:disabled {
+    border: none;
+    background: var(--Black-Black---03);
+    color: var(--Black-Black---07);
+  }
+}

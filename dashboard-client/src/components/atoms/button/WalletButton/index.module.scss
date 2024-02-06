@@ -1,0 +1,22 @@
+@import '@/styles/_fonts.scss';
+
+.wallet_button {
+  display: inline-flex;
+  padding: 8px 18.5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 20px;
+  background: var(--Black-Black---01, #f2f2f2);
+  transition: all 0.5s ease 0s;
+
+  &:hover {
+    background: var(--Black-Black---03, #d8d8d8);
+  }
+}
+
+.wallet_button_text {
+  color: var(--Black-Black---14);
+  @extend %medium_M;
+}

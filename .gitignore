@@ -1,0 +1,8 @@
+# dependencies
+node_modules
+
+# genereated files
+dist
+libs/prisma/*
+!libs/prisma/schema.prisma
+!libs/prisma/migrations

@@ -1,0 +1,27 @@
+@import '@/styles/_fonts.scss';
+
+.notice_container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.notice_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.message {
+  color: var(--Black-Black---14);
+  text-align: center;
+  @extend %medium_M;
+}
+
+.sub_message {
+  color: var(--Black-Black---14);
+  text-align: center;
+  @extend %regular_S;
+}

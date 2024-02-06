@@ -1,0 +1,202 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""자산 타입 (토큰 / NFT)"""
+enum ASSET_TYPE {
+  NFT
+  TOKEN
+}
+
+"""자산"""
+type Asset {
+  """주소"""
+  address: String!
+
+  """생성 일시"""
+  createdAt: DateTime!
+
+  """자산 아이디"""
+  id: String!
+
+  """NFT 정보"""
+  nft: Nft
+
+  """토큰 정보"""
+  token: Token
+
+  """자산 타입"""
+  type: ASSET_TYPE!
+
+  """수정 일시"""
+  updatedAt: DateTime!
+}
+
+input CreateAssetInput {
+  """자산 주소"""
+  address: String!
+
+  """자산 심볼"""
+  balance: String!
+
+  """자산 데이터 URL"""
+  baseURL: Int
+
+  """자산 소수점 자리수"""
+  decimal: Int
+
+  """자산 이름"""
+  name: String!
+
+  """자산 심볼"""
+  symbol: String!
+
+  """자산 타입"""
+  type: ASSET_TYPE!
+
+  """지갑 주소"""
+  userWalletAddress: String!
+}
+
+"""입금 또는 출금 여부"""
+enum DIRECTION {
+  RECEIVE
+  SEND
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input DeleteAssetInput {
+  """자산 주소"""
+  address: String!
+
+  """지갑 주소"""
+  userWalletAddress: String!
+}
+
+type Mutation {
+  """자산 생성"""
+  createAsset(input: CreateAssetInput!): Asset!
+
+  """자산 생성"""
+  deleteAsset(input: DeleteAssetInput!): Asset!
+  fetchUser(input: UserInput!): User!
+}
+
+"""Nft"""
+type Nft {
+  """자산 아이디"""
+  assetId: String!
+
+  """토큰 baseURL"""
+  baseURL: String!
+
+  """토큰 이름"""
+  name: String!
+
+  """토큰 심볼"""
+  symbol: String!
+}
+
+type Query {
+  getUser(input: UserInput!): User!
+}
+
+"""토큰"""
+type Token {
+  """자산 아이디"""
+  assetId: String!
+
+  """토큰 소수점 자리수"""
+  decimal: Int!
+
+  """토큰 이름"""
+  name: String!
+
+  """토큰 심볼"""
+  symbol: String!
+}
+
+"""트랜잭션"""
+type Transaction {
+  """자산 주소"""
+  address: String!
+
+  """트랜잭션 자산 수량"""
+  amount: String!
+
+  """자산 정보"""
+  asset: Asset!
+
+  """생성 일시"""
+  createdAt: DateTime!
+
+  """입금 또는 출금 여부"""
+  direction: DIRECTION!
+
+  """트랜잭션 아이디"""
+  id: ID!
+
+  """거래 대상"""
+  targetAddress: String!
+
+  """발생 타임스탬프"""
+  timestamp: Int!
+
+  """트랜잭션 해시"""
+  transactionHash: String!
+
+  """수정 일시"""
+  updatedAt: DateTime!
+
+  """사용자 아이디"""
+  userId: String!
+}
+
+"""사용자"""
+type User {
+  """이메일"""
+  address: String!
+
+  """생성 일시"""
+  createdAt: DateTime!
+
+  """아이디"""
+  id: ID!
+
+  """마지막 업데이트된 블록 넘버"""
+  lastUpdatedBlockNumber: Int!
+  transactions: [Transaction!]!
+
+  """수정 일시"""
+  updatedAt: DateTime!
+  userAssetBalances: [UserAssetBalance!]!
+}
+
+"""사용자의 자산 정보"""
+type UserAssetBalance {
+  asset: Asset!
+
+  """자산 아이디"""
+  assetId: String!
+
+  """사용자 잔고"""
+  balance: String!
+
+  """생성 일시"""
+  createdAt: DateTime!
+
+  """수정 일시"""
+  updatedAt: DateTime!
+
+  """사용자 아이디"""
+  userId: String!
+}
+
+input UserInput {
+  """지갑 주소"""
+  address: String!
+}

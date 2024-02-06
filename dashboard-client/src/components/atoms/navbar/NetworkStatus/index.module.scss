@@ -1,0 +1,17 @@
+@import '@/styles/_fonts.scss';
+
+.network_status {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.network_status_text {
+  color: var(--Main-White);
+  @extend %medium_M;
+}
+
+.network_status_invalid_text {
+  color: var(--Error);
+  @extend %medium_M;
+}

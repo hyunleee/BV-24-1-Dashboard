@@ -1,0 +1,28 @@
+.wallet_connect_status {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+    animation-timing-function: ease-out;
+  }
+  70% {
+    transform: rotate(210deg) scale(0.9);
+    transform-origin: center;
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+    animation-timing-function: ease-in;
+  }
+}
+
+.loading {
+  animation: spin 1s infinite;
+}
