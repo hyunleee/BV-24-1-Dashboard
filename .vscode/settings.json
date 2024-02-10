@@ -7,7 +7,7 @@
     ".prettierignore": true,
     ".prettierrc": true,
     "commitlint.config.js": true,
-    ".github": true,
+    ".github": false,
   },
   "search.exclude": {
     "node_modules/": true,
