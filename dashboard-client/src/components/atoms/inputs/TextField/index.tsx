@@ -1,6 +1,6 @@
-import { forwardRef, useEffect, useState } from 'react';
-import { UIProps } from '@/components/atoms/props';
 import s from './index.module.scss';
+import { UIProps } from '@/components/atoms/props';
+import { forwardRef, useEffect, useState } from 'react';
 
 export interface TextFieldProps extends UIProps.Input {
   placeholder?: string;
@@ -10,7 +10,7 @@ export interface TextFieldProps extends UIProps.Input {
   defaultValue?: string | number;
 }
 
-const getDefaultValue = (
+export const getDefaultValue = (
   type?: 'email' | 'password' | 'number' | 'phone' | 'search',
   value?: string | number,
   defaultValue?: string | number

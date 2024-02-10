@@ -9,7 +9,7 @@ export interface NoticeProps extends UIProps.Div {
   noticeType: NoticeType;
 }
 
-const getNoticeElement = (noticeType: NoticeType) => {
+export const getNoticeElement = (noticeType: NoticeType) => {
   switch (noticeType) {
     case NoticeType.ASSET_WALLET_NOT_CONNECTED:
       return {
